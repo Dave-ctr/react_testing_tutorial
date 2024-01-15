@@ -73,3 +73,16 @@ if ( actualFullName !== expectedFullName ) { throw new Error(
 
 // an automated test is code that throws an error when the expected value does
 not match the actual value
+
+WHAT TO TEST IN REACT???!!!
+
+- Test component renders
+- Test component renders with props 
+- Test component renders in different states
+- Test component reacts to events
+
+WHAT NOT TO TEST IN REACT???!!!
+
+- Implementation details
+- Third party code
+- Code that is not important from a user point of view
