@@ -3,6 +3,13 @@ const Application = () => {
     <>
       <h1>Job Application Form</h1>
       <h2>Section 1</h2>
+      <p>All fields are mandatory</p>
+      <span title='close'>X</span>
+      <img
+        src='https://via.placeholder.com/150'
+        alt='a placeholder on a page'
+      />
+      <div data-testid='custom-element'>Custom HTML element</div>
       <form>
         <div>
           <label htmlFor='name'>Name</label>
@@ -10,6 +17,9 @@ const Application = () => {
             type='text'
             id='name'
             name='name'
+            placeholder='Enter your name'
+            value='Dave'
+            onChange={() => {}}
           />
         </div>
         <div>
@@ -20,7 +30,7 @@ const Application = () => {
           />
         </div>
         <div>
-          <label htmlFor='job-location'>Job Location</label>
+          <label htmlFor='job-location'>Name</label>
           <select id='job-location'>
             <option value=''>Select a Country</option>
             <option value='AU'>Australia</option>

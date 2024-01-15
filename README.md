@@ -99,3 +99,14 @@ Popular getByRole Options:
 - pressed
 - disabled
 - expanded
+
+Priority Order for Queries:
+
+- getByRole
+- getByLabelText (very good for form fields)
+- getByPlaceholderText 
+- getByText (good for divs, spans and paragraphs)
+- getByDisplayValue (good for filled in form fields)
+- getByAltText (not recommended)
+- getByTitle (not recommended)
+- getByTestId (last resort)
