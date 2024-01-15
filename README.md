@@ -86,3 +86,16 @@ WHAT NOT TO TEST IN REACT???!!!
 - Implementation details
 - Third party code
 - Code that is not important from a user point of view
+
+THE getByRole METHOD SHOULD BE YOUR GO-TO TESTING METHOD FOR JUST ABOUT EVERYTHING!!!
+
+Popular getByRole Options:
+
+- name
+- level
+- hidden
+- selected
+- checked
+- pressed
+- disabled
+- expanded
