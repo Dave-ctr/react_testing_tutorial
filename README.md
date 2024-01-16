@@ -110,3 +110,15 @@ Priority Order for Queries:
 - getByAltText (not recommended)
 - getByTitle (not recommended)
 - getByTestId (last resort)
+
+RTL Queries:
+
+- getBy & getAllBy
+- queryBy & queryAllBy
+- findBy & findAllBy
+- Manual Queries (not recommended) - 
+  You can use the regular querySelector DOM API to find elements.
+  const {container} = render(<MyComponent />)
+  const foo = container.querySelector('[data-foo="bar"]')
+
+CHECK OUT "Testing Playground" CHROME EXTENSION!!!
