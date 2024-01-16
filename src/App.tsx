@@ -6,7 +6,7 @@ function App() {
   return (
     <div className='App'>
       <Application />
-      <Skills skills={["HTML", "CSS"]} />
+      <Skills skills={["HTML", "CSS", "JavaScript"]} />
     </div>
   )
 }

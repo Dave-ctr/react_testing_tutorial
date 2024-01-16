@@ -36,6 +36,7 @@ const Application = () => {
             <option value='AU'>Australia</option>
             <option value='CA'>Canada</option>
             <option value='IN'>India</option>
+            <option value='NZ'>New Zealand</option>
             <option value='UK'>United Kingdom</option>
             <option value='US'>United States</option>
           </select>
