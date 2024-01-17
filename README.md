@@ -122,3 +122,17 @@ RTL Queries:
   const foo = container.querySelector('[data-foo="bar"]')
 
 CHECK OUT "Testing Playground" CHROME EXTENSION!!!
+
+ACT - act():
+
+The act() function is a part of the React Testing Library and it's used to wrap code that updates state or causes side effects. It ensures that all updates related to these "actions" have been processed and applied to the DOM before you make any assertions on the output.
+      
+In other words, act() is used to mimic the behavior of real user interactions that cause updates to the DOM. It batches multiple updates together to simulate a single update cycle, ensuring that all updates are flushed before your test continues execution. This makes your tests run closer to how they would in a real browser environment. 
+
+The name act() comes from the Arrange-Act-Assert (AAA) pattern. The Arrange-Act-Assert (AAA) pattern is a common way to structure unit tests. It divides tests into three distinct steps:
+
+   - Arrange: This step involves setting up the conditions for the test. It includes creating objects, initializing variables, and preparing the environment for the test. This step should not involve any actions that affect the outcome of the test.
+
+   - Act: This is where the actual functionality being tested is executed. It typically involves calling a function or method, triggering an event, or executing a piece of code. The goal here is to isolate the behavior that you want to test.
+
+   - Assert: This final step involves verifying the outcome of the test. It checks whether the output or state of the system matches the expected result. If the actual result matches the expected result, the test passes; otherwise, it fails.

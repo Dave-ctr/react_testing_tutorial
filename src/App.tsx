@@ -2,6 +2,7 @@ import "./App.css"
 import Application from "./components/application/application"
 import Skills from "./components/skills/skills"
 import Counter from "./components/counter/counter"
+import CounterTwo from "./components/counter-two/counter-two"
 import AppProviders from "./providers/app-providers"
 import MuiMode from "./components/mui/mui-mode"
 
@@ -12,6 +13,7 @@ function App() {
         <Application />
         <Skills skills={["HTML", "CSS", "JavaScript"]} />
         <Counter />
+        <CounterTwo count={666} />
         <MuiMode />
       </div>
     </AppProviders>
