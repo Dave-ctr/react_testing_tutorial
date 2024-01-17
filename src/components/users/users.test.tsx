@@ -1,6 +1,5 @@
 import { render, screen } from "@testing-library/react"
 import Users from "./users"
-import handlers from "./mocks/handlers"
 
 describe("Users", () => {
   test("renders correctly", () => {
