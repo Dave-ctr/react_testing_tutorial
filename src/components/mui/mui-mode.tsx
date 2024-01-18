@@ -1,11 +1,11 @@
-import { useTheme } from "@mui/material/styles"
-import { Typography } from "@mui/material"
+import { useTheme } from "@mui/material/styles";
+import { Typography } from "@mui/material";
 
 const MuiMode = () => {
-  const theme = useTheme()
+  const theme = useTheme();
   return (
-    <Typography component='h1'>{`${theme.palette.mode} code = ${theme.palette.mode} mode`}</Typography>
-  )
-}
+    <Typography component="h1">{`${theme.palette.mode} code = ${theme.palette.mode} mode`}</Typography>
+  );
+};
 
-export default MuiMode
+export default MuiMode;
