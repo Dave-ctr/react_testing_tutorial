@@ -1,7 +1,9 @@
 import { render, screen } from "@testing-library/react";
 import { rest } from "msw";
-import Users from "./users";
+import { Users } from "./users";
 import { server } from "../../mocks/server";
+
+server.listen();
 
 describe("Users", () => {
   test("renders correctly", () => {
@@ -11,17 +13,9 @@ describe("Users", () => {
   });
 
   test("renders a list of users", async () => {
-    server.use(
-      rest.get(
-        "https://jsonplaceholder.typicode.com/users",
-        (req, res, ctx) => {
-          return res(ctx.status(500));
-        }
-      )
-    );
     render(<Users />);
     const users = await screen.findAllByRole("listitem");
-    expect(users).toHaveLength(10);
+    expect(users).toHaveLength(3);
   });
 
   test("renders error", async () => {
